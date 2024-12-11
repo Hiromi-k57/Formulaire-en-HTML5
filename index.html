@@ -16,83 +16,131 @@
     <form method="post" action="mailto:exemple@gmail.com">
       <!-- Prénom -->
       <label for="prenom">Prénom :</label>
-      <input type="text" id="prenom" name="prenom" required><br /><br />
+      <input type="text" id="prenom" name="prenom" required /><br /><br />
 
       <!-- Nom -->
       <label for="nom">Nom :</label>
-      <input type="text" id="nom" name="nom" required><br /><br />
+      <input type="text" id="nom" name="nom" required /><br /><br />
 
       <!--Âge-->
       <label for="age">Âge :</label>
-      <input type="text" id="age" name="age" min="0" max="120" required><br /><br />
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="0"
+        max="120"
+        required
+      /><br /><br />
 
       <!-- Sexe -->
       <label for="sexe">Sexe :</label>
       <select id="sexe" name="sexe" required>
-        <option value="femme">Femme</option>
+        <option value="">Femme</option>
         <option value="homme">Homme</option>
-        <option value="autre">Autre</option>
-      </select><br /><br />
+        <option value="autre">Autre</option></select
+      ><br /><br />
 
       <!-- Adresse mail -->
       <label for="email">Adresse mail :</label>
-      <input type="email" id="email" name="email" required><br><br>
+      <input type="email" id="email" name="email" required /><br /><br />
 
       <!-- Adresse postale -->
       <label for="adresse">Adresse postale :</label>
-      <input type="text" id="adresse" name="adresse" required><br><br>
+      <input type="text" id="adresse" name="adresse" required /><br /><br />
 
       <!-- Code postal -->
       <label for="codepostal">Code postal :</label>
-      <input type="text" id="codepostal" name="codepostal" pattern="[0-9]{5}" title="Entrez un code postal à 5 chiffres" required><br><br>
+      <input
+        type="text"
+        id="codepostal"
+        name="codepostal"
+        pattern="[0-9]{5}"
+        title="Entrez un code postal à 5 chiffres"
+        required
+      /><br /><br />
 
       <!-- Ville -->
       <label for="ville">Ville :</label>
-      <input type="text" id="ville" name="ville" required><br><br>
-      
+      <input type="text" id="ville" name="ville" required /><br /><br />
+
       <!-- Métier excercé -->
       <label for="metier">Métier exercé :</label>
       <select id="metier" name="metier" required>
-          <option value="enseignant">Enseignant</option>
-          <option value="medecin">Médecin</option>
-          <option value="Vendeur">Vendeur</option>
-          <option value="artiste">Artiste</option>
-          <option value="autre">Autre</option>
-      </select><br><br>
+        <option value="">Enseignant</option>
+        <option value="medecin">Médecin</option>
+        <option value="Vendeur">Vendeur</option>
+        <option value="artiste">Artiste</option>
+        <option value="autre">Autre</option></select
+      ><br /><br />
 
       <!-- Nationalité -->
       <label for="nationalite">Nationalité :</label>
       <select id="nationalite" name="nationalite" required>
-          <option value="francaise" selected>Française</option>
-          <option value="belge">Belge</option>
-          <option value="britannique">Britannique</option>
-          <option value="espagnol">Espagnol</option>
-          <option value="autre">Autre</option>
-      </select><br><br>
+        <option value="" selected>Française</option>
+        <option value="belge">Belge</option>
+        <option value="britannique">Britannique</option>
+        <option value="espagnol">Espagnol</option>
+        <option value="autre">Autre</option></select
+      ><br /><br />
 
       <!-- Date de naissance -->
       <label for="date_naissance">Date de naissance :</label>
-      <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+      <input
+        type="date"
+        id="date_naissance"
+        name="date_naissance"
+        required
+      /><br /><br />
 
       <!-- Pays de naissance -->
       <label for="pays_naissance">Pays de naissance :</label>
-      <input type="text" id="pays_naissance" name="pays_naissance" required><br><br>
+      <input
+        type="text"
+        id="pays_naissance"
+        name="pays_naissance"
+        required
+      /><br /><br />
 
       <!-- Numéro de sécurité sociale -->
       <label for="securite_sociale">Numéro de sécurité sociale :</label>
-      <input type="text" id="securite_sociale" name="securite_sociale" pattern="[0-9]{15}" title="Entrez un numéro de sécurité sociale valide à 15 chiffres" required><br><br>
+      <input
+        type="text"
+        id="securite_sociale"
+        name="securite_sociale"
+        pattern="[0-9]{15}"
+        title="Entrez un numéro de sécurité sociale valide à 15 chiffres"
+        required
+      /><br /><br />
 
       <!-- Numéro du passeport -->
       <label for="passeport">Numéro du passeport :</label>
-      <input type="text" id="passeport" name="passeport" pattern="[A-Z0-9]{8,9}" title="Entrez un numéro de passeport valide (8 ou 9 caractères alphanumériques)" required><br><br>
+      <input
+        type="text"
+        id="passeport"
+        name="passeport"
+        pattern="[A-Z0-9]{8,9}"
+        title="Entrez un numéro de passeport valide (8 ou 9 caractères alphanumériques)"
+        required
+      /><br /><br />
 
       <!-- Date de délivrance du passeport -->
       <label for="date_delivrance">Date de délivrance du passeport :</label>
-      <input type="date" id="date_delivrance" name="date_delivrance" required><br><br>
+      <input
+        type="date"
+        id="date_delivrance"
+        name="date_delivrance"
+        required
+      /><br /><br />
 
       <!-- Date de validité du passeport -->
       <label for="date_validite">Date de validité du passeport :</label>
-      <input type="date" id="date_validite" name="date_validite" required><br><br>
+      <input
+        type="date"
+        id="date_validite"
+        name="date_validite"
+        required
+      /><br /><br />
 
       <!-- Bouton de soumission -->
       <button type="submit">Soumettre</button>
